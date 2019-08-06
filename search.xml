@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[加速国内Github访问]]></title>
+    <url>%2Fmyzou%2F2019%2F08%2F06%2F%E5%8A%A0%E9%80%9F%E5%9B%BD%E5%86%85Github%E8%AE%BF%E9%97%AE%2F</url>
+    <content type="text"><![CDATA[由于某些原因，国内访问Github会异常缓慢，在clone仓库时甚至只有10k以下的速度，下载半天有时还会失败需要从头再来，甚是让人恼火。 本文介绍通过修改系统hosts文件的办法，绕过国内dns解析，直接访问GitHub的CDN节点，从而达到加速的目的。不需要科学上网，也不需要海外的服务器辅助。 指向于github常用的站点进行解析直接访问对应的ip 这样就节省了解析时间，加快访问速度。 ###1.常用github站点 123192.30.253.112 github.com151.101.72.133 assets-cdn.github.com151.101.193.194 github.global.ssl.fastly.net 2.修改系统hosts文件，直接访问打开系统hosts文件(需管理员权限)。路径：C:\Windows\System32\drivers\etc 在末尾添加上面的三行记录并保存。(需管理员权限，注意IP地址与域名间需留有空格) 示例： 12345# 127.0.0.1 localhost# ::1 localhost192.30.253.112 github.com151.101.72.133 assets-cdn.github.com151.101.193.194 github.global.ssl.fastly.net ###3.刷新系统DNS缓存 Windows+X 打开系统命令行（管理员身份）或powershell 运行 ipconfig /flushdns 手动刷新系统DNS缓存。 1ipconfig /flushdns ok 访问https://github.com/ 快了一点点]]></content>
+  </entry>
+  <entry>
     <title><![CDATA[解决在Markdown中的表格单元格合并的问题]]></title>
     <url>%2Fmyzou%2F2019%2F08%2F05%2F%E8%A7%A3%E5%86%B3%E5%9C%A8Markdown%E4%B8%AD%E7%9A%84%E8%A1%A8%E6%A0%BC%E5%8D%95%E5%85%83%E6%A0%BC%E5%90%88%E5%B9%B6%E7%9A%84%E9%97%AE%E9%A2%98%2F</url>
     <content type="text"><![CDATA[markdown 默认是不支持单元格合并的必须使用html 嵌套进入markdown里面 然后修改对应的html进行合并 引入HTML时需要注意的需要注意的一点是，在markdown中使用html代码来实现表格的效果，需要在表格的外面套上 12345&lt;escape&gt; //html 代码&lt;/escape&gt;colspan=&quot;2&quot; rowspan=&quot;2&quot; 示例 12345678910111213141516171819202122&lt;escape&gt;&lt;table&gt; &lt;tr&gt; &lt;th&gt;项目1&lt;/th&gt; &lt;th&gt;项目2&lt;/th&gt; &lt;th&gt;项目3&lt;/th&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt;a1&lt;/td&gt; &lt;td colspan=&quot;2&quot; &gt;&lt;font color=&quot;Hotpink&quot;&gt;colspan=&quot;2&quot;&lt;/font&gt; &lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td colspan=&quot;2&quot; &gt;&lt;font color=&quot;Hotpink&quot;&gt;colspan=&quot;2&quot;&lt;/font&gt; &lt;/td&gt; &lt;td&gt;b2&lt;/td&gt; &lt;td&gt;b3&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt;c2&lt;/td&gt; &lt;td&gt;c3&lt;/td&gt; &lt;/tr&gt;&lt;/table&gt;&lt;/escape&gt; ##效果图## 项目1 项目2 项目3 a1 colspan="2" colspan="2" b3 rowspan="2" c2 c3 c2 c3 如何偷懒http://www.tablesgenerator.com/ 可以直接copy excel 表格内容到 然后进行修改内容]]></content>
