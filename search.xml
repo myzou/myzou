@@ -1,9 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[java中如何获取日期时间中的星期几？]]></title>
+    <url>%2Fmyzou%2F2019%2F08%2F06%2Fjava%E4%B8%AD%E5%A6%82%E4%BD%95%E8%8E%B7%E5%8F%96%E6%97%A5%E6%9C%9F%E6%97%B6%E9%97%B4%E4%B8%AD%E7%9A%84%E6%98%9F%E6%9C%9F%E5%87%A0%EF%BC%9F%2F</url>
+    <content type="text"><![CDATA[###1、取得指定日期是星期几 取得指定日期是星期几可以采用下面两种方式取得日期是星期几： ##a、使用Calendar类 根据日期取得星期几 12345678910public static String getWeek(Date date)&#123; String[] weeks = &#123;"星期日","星期一","星期二","星期三","星期四","星期五","星期六"&#125;; Calendar cal = Calendar.getInstance(); cal.setTime(date); int week_index = cal.get(Calendar.DAY_OF_WEEK) - 1; if(week_index&lt;0)&#123; week_index = 0; &#125; return weeks[week_index];&#125; ##b、使用SimpleDateFormat类 1.根据日期取得星期几 12345public static String getWeek(Date date)&#123; SimpleDateFormat sdf = new SimpleDateFormat("EEEE");String week = sdf.format(date);return week;&#125; 注：格式化字符串存在区分大小写对于创建SimpleDateFormat传入的参数：EEEE代表星期，如“星期四”；MMMM代表中文月份，如“十一月”；MM代表月份，如“11”；yyyy代表年份，如“2010”；dd代表天，如“25” 2.取得日期是某年的第几周根据日期入得日期是某年的第几周。//取得日期是某年的第几周 123456public static int getWeekOfYear(Date date)&#123; Calendar cal = Calendar.getInstance(); cal.setTime(date); int week_of_year = cal.get(Calendar.WEEK_OF_YEAR); return week_of_year;&#125; 3、得到某年的某个月有多少天已知年份和月份，取得该月有多少天。//取得某个月有多少天 1234567public static int getDaysOfMonth(int year,int month)&#123; Calendar cal = Calendar.getInstance(); cal.set(Calendar.YEAR, year); cal.set(Calendar.MONTH, month-1); int days_of_month = cal.getActualMaximum(Calendar.DAY_OF_MONTH); return days_of_month;&#125; b、使用SimpleDateFormat类4.已知两个日期，计算它们之间相差多少天。// 取得两个日期之间的相差多少天 12345public static long getDaysBetween(Date date0, Date date1) &#123;long daysBetween = (date0.getTime() - date1.getTime() + 1000000) / 86400000;// 86400000=3600241000 用立即数，减少乘法计算的开销return daysBetween;&#125;]]></content>
+      <tags>
+        <tag>java 工具类 获取日期</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[加速国内Github访问]]></title>
     <url>%2Fmyzou%2F2019%2F08%2F06%2F%E5%8A%A0%E9%80%9F%E5%9B%BD%E5%86%85Github%E8%AE%BF%E9%97%AE%2F</url>
     <content type="text"><![CDATA[由于某些原因，国内访问Github会异常缓慢，在clone仓库时甚至只有10k以下的速度，下载半天有时还会失败需要从头再来，甚是让人恼火。 本文介绍通过修改系统hosts文件的办法，绕过国内dns解析，直接访问GitHub的CDN节点，从而达到加速的目的。不需要科学上网，也不需要海外的服务器辅助。 指向于github常用的站点进行解析直接访问对应的ip 这样就节省了解析时间，加快访问速度。 ###1.常用github站点 123192.30.253.112 github.com151.101.72.133 assets-cdn.github.com151.101.193.194 github.global.ssl.fastly.net 2.修改系统hosts文件，直接访问打开系统hosts文件(需管理员权限)。路径：C:\Windows\System32\drivers\etc 在末尾添加上面的三行记录并保存。(需管理员权限，注意IP地址与域名间需留有空格) 示例： 12345# 127.0.0.1 localhost# ::1 localhost192.30.253.112 github.com151.101.72.133 assets-cdn.github.com151.101.193.194 github.global.ssl.fastly.net ###3.刷新系统DNS缓存 Windows+X 打开系统命令行（管理员身份）或powershell 运行 ipconfig /flushdns 手动刷新系统DNS缓存。 1ipconfig /flushdns ok 访问https://github.com/ 快了一点点]]></content>
+      <tags>
+        <tag>github dns</tag>
+      </tags>
   </entry>
   <entry>
     <title><![CDATA[解决在Markdown中的表格单元格合并的问题]]></title>
