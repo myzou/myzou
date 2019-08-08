@@ -1,8 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[图片]]></title>
+    <url>%2Fmyzou%2F2019%2F08%2F08%2F%E5%A4%A7%E9%9B%84%E5%9B%BE%E7%89%87%2F</url>
+    <content type="text"><![CDATA[]]></content>
+      <tags>
+        <tag>大雄</tag>
+        <tag>小舅子</tag>
+        <tag>图片</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[idea快捷键映射表]]></title>
-    <url>%2Fmyzou%2F2019%2F08%2F07%2Fidea%2F</url>
+    <url>%2Fmyzou%2F2019%2F08%2F07%2Fidea%E5%BF%AB%E6%8D%B7%E9%94%AE%E6%98%A0%E5%B0%84%E8%A1%A8%2F</url>
     <content type="text"><![CDATA[网页IDEADefaultKeymap.html 效果 其他文字版IntelliJ Idea 常用快捷键 java开发手册华山版.html]]></content>
   </entry>
   <entry>
@@ -41,20 +51,20 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[javaB站]]></title>
-    <url>%2Fmyzou%2F2019%2F08%2F02%2FjavaB%E7%AB%99%2F</url>
-    <content type="text"><![CDATA[https://www.bilibili.com/video/av36806419 基础，上面的是视频的番号https://www.bilibili.com/video/av47176832《Java 编程学习第一季》： av47103781https://www.bilibili.com/video/av47176832《Java 企业开发第一季 - Spring 实战》： av47176832https://www.bilibili.com/video/av47228830《Java 企业开发第二季 - MyBatis 实战》： av47228830https://www.bilibili.com/video/av47218566《Java 企业开发第三季 - Spring MVC 实战》： av47218566https://www.bilibili.com/video/av47230137《Java 企业开发第四季 - Spring Boot 实战》： av47230137https://www.bilibili.com/video/《Java 企业开发第五季 - Spring Cloud 实战》：https://www.bilibili.com/video/av47009143《Java 企业开发第六季 - Dubbo 实战》： av47009143https://www.bilibili.com/video/av48308453《Java 企业开发第七季 - 电商项目实战》： av48308453 https://www.bilibili.com/video/av47702905《数据库第一季 - MySQL 实战》： av47702905https://www.bilibili.com/video/av47423174《数据库第二季 - Redis 实战》： av47423174https://www.bilibili.com/video/av47425352《数据库第三季 - MongoDB 实战》： av47425352https://www.bilibili.com/video/av48279989《数据库第四季 - Elasticsearch 实战》： av48279989https://www.bilibili.com/video/av48502473《数据库第五季 - Oracle 实战》： av48502473 https://www.bilibili.com/video/av49126649《前端开发第一季 - HTML + CSS 实战》： av49126649https://www.bilibili.com/video/av48927313《前端开发第二季 - Javascript 实战》： av48927313https://www.bilibili.com/video/av48033695《前端开发第三季 - React 实战》： av48033695https://www.bilibili.com/video/av50886891《前端开发第四季 - Vue 实战》： av50886891https://www.bilibili.com/video/av48495066《前端开发第五季 - React 项目实战》： av48495066https://www.bilibili.com/video/av48333477《前端开发第六季 - Vue 项目实战》： av48333477 https://www.bilibili.com/video/av47382482《构建工具 Maven 视频教程全集（35P）》https://www.bilibili.com/video/av47701443《版本控制 Git 视频教程全集（62P）》https://www.bilibili.com/video/av47702283《操作系统 Linux 视频教程全集》https://www.bilibili.com/video/av48621769《大数据开发第一季 - Hadoop》： av48621769https://www.bilibili.com/video/av48581792《大数据开发第二季 - HBase》： av48581792https://www.bilibili.com/video/av48609427《大数据开发第三季 - Hive》： av48609427https://www.bilibili.com/video/av50996367《大数据开发第四季 - Flink》： av50996367https://www.bilibili.com/video/av48668079《大数据开发第五季 - Spark》： av48668079 https://www.bilibili.com/video/av48444262《架构之路第一季 - RabbitMQ》： av48444262https://www.bilibili.com/video/av47773990《架构之路第二季 - Kafka》： av47773990https://www.bilibili.com/video/av47773419《架构之路第三季 - Zookeeper》： av47773419 01、Java av4710378102、Spring av4717683203、Spring Mvc av4721856604、MyBatis av4722883005、Hibernate av4730428806、Spring Boot av4723013707、Spring Cloud08、Dubbo av4700914309、MySQL av4770290510、Redis av4742317411、MongoDB av4742535212、Elasticsearch av4827998913、Zookeeper av4777341914、Kafka av4777399015、Linux av4770228316、Docker av4771528217、Maven av4738248218、Git av4770144319、Jenkins av4771470620、IDEA av4771516121、Shiro av4771553622、React av4803369523、Vue av4833347724、电商项目实战 av4830845325、RBAC 权限系统 av4830571926、数据结构与算法 av4850555627、Oracle av4850247328、ActiveMQ av4856247429、TCP/IP av4856242630、HTTP av4856145531、Netty av4857020232、Gradle av4858111933、HBase av4858179234、Kubernetes av4858245635、Hive av4860942736、Hadoop av4862176937、Spark av48668079]]></content>
-      <tags>
-        <tag>java资料</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[脚本启动tomcat]]></title>
     <url>%2Fmyzou%2F2019%2F08%2F02%2F%E8%84%9A%E6%9C%AC%E5%90%AF%E5%8A%A8tomcat%2F</url>
     <content type="text"><![CDATA[1234#!/bin/bashsh /usr/local/tomcat/ov_8081/bin/shutdown.shsh /usr/local/tomcat/ov_8081/bin/startup.shtail -f /usr/local/tomcat/ov_8081/logs/catalina.out HK Primary Backup system &lt;-&gt; 81088633 82012200 Network &lt;-&gt; 82012882 82012600 NOPs(Network) (COPs)Cloud Guangzhou Primary Backup Escalation Primary Backup Escalation Remark 2019/7/28 &lt;-&gt; 2019/8/10 彭晓春 陈冉 余毅毅 江智良 雷明 钟志辉 2019/8/11 &lt;-&gt; 2019/8/24 陈冉 彭晓春 余毅毅 雷明 潘健辉 钟志辉 2019/8/25 &lt;-&gt; 2019/9/7 彭晓春 陈冉 余毅毅 潘健辉 刘其峰 钟志辉 2019/9/8 &lt;-&gt; 2019/9/21 陈冉 彭晓春 余毅毅 刘其峰 江智良 钟志辉 中秋假期 2019/9/22 &lt;-&gt; 2019/10/5 彭晓春 陈冉 余毅毅 江智良 雷明 钟志辉 国庆假期 2019/10/6 &lt;-&gt; 2019/10/19 陈冉 彭晓春 余毅毅 雷明 潘健辉 钟志辉 国庆假期 2019/10/20 &lt;-&gt; 2019/11/2 彭晓春 陈冉 余毅毅 潘健辉 刘其峰 钟志辉 2019/11/3 &lt;-&gt; 2019/11/16 陈冉 彭晓春 余毅毅 刘其峰 江智良 钟志辉 2019/11/17 &lt;-&gt; 2019/11/30 彭晓春 陈冉 余毅毅 江智良 雷明 钟志辉 2019/12/1 &lt;-&gt; 2019/12/14 陈冉 彭晓春 余毅毅 雷明 潘健辉 钟志辉 2019/12/15 &lt;-&gt; 2019/12/28 彭晓春 陈冉 余毅毅 潘健辉 刘其峰 钟志辉 ITS T1 T2 T3 T4 Network &lt;-&gt; Brandon Li/Lawrence Li Gary Chen Marco Chen Mancent Wong Remedy &lt;-&gt; Ella Emily - - Team Phone List Company Phone Mobile NOPs &lt;-&gt; 彭晓春 020-83936880 ext. 1308 18028612321/13822196181 NOPs &lt;-&gt; 陈冉 020-83936880 ext. 5034 13526749307 NOPs &lt;-&gt; 余毅毅 020-83936880 ext. 1343 13802733043/18925088883 COPs &lt;-&gt; 江智良 020-85181257 ext. 1318 15989155692 COPs &lt;-&gt; 雷明 020-85181257 ext. 1359 18588660351 COPs &lt;-&gt; 钟志辉 020-83936880 ext. 1339 18902388749 COPs &lt;-&gt; 潘健辉 020-85181257 ext. 1344 18824683621 COPs &lt;-&gt; 刘其峰(TW) 6-8861 711 ext.711 0981107044 ITS-Network &lt;-&gt; Brandon Li 020-83936880 ext. 3036 13711221009 ITS-Network &lt;-&gt; Lawrence Li 020-38153000 ext. 3026 13682232925 ITS-Network &lt;-&gt; Gary Chen 020-38153000 ext. 3971 13802444784 ITS-Network &lt;-&gt; Marco Chen 020-83936880 ext. 3970 13826084299 ITS-Network &lt;-&gt; Mancent Wong 2123 1974 ext.7598 85221707598 ITS-Remedy &lt;-&gt; Ella 020-85181280 ext. 1276 13326409060 ITS-Remedy &lt;-&gt; Emily 2123 1974 ext.7457 -]]></content>
       <tags>
         <tag>脚本</tag>
         <tag>tomcat</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[javaB站]]></title>
+    <url>%2Fmyzou%2F2019%2F08%2F02%2FjavaB%E7%AB%99%2F</url>
+    <content type="text"><![CDATA[https://www.bilibili.com/video/av36806419 基础，上面的是视频的番号https://www.bilibili.com/video/av47176832 Java 编程学习第一季》： av47103781https://www.bilibili.com/video/av47176832Java 企业开发第一季 - Spring 实战》： av47176832https://www.bilibili.com/video/av47228830《Java 企业开发第二季 - MyBatis 实战》： av47228830https://www.bilibili.com/video/av47218566《Java 企业开发第三季 - Spring MVC 实战》： av47218566https://www.bilibili.com/video/av47230137《Java 企业开发第四季 - Spring Boot 实战》： av47230137https://www.bilibili.com/video/ 《Java 企业开发第五季 - Spring Cloud 实战》：https://www.bilibili.com/video/av47009143 Java 企业开发第六季 - Dubbo 实战》： av47009143https://www.bilibili.com/video/av48308453 《Java 企业开发第七季 - 电商项目实战》： av48308453 https://www.bilibili.com/video/av47702905《数据库第一季 - MySQL 实战》： av47702905https://www.bilibili.com/video/av47423174 《数据库第二季 - Redis 实战》： av47423174https://www.bilibili.com/video/av47425352 《数据库第三季 - MongoDB 实战》： av47425352https://www.bilibili.com/video/av48279989 《数据库第四季 - Elasticsearch 实战》： av48279989https://www.bilibili.com/video/av48502473《数据库第五季 - Oracle 实战》： av48502473https://www.bilibili.com/video/av49126649 《前端开发第一季 - HTML + CSS 实战》： av49126649https://www.bilibili.com/video/av48927313 《前端开发第二季 - Javascript 实战》： av48927313https://www.bilibili.com/video/av48033695 《前端开发第三季 - React 实战》： av48033695https://www.bilibili.com/video/av50886891 《前端开发第四季 - Vue 实战》： av50886891https://www.bilibili.com/video/av48495066 《前端开发第五季 - React 项目实战》： av48495066https://www.bilibili.com/video/av48333477 《前端开发第六季 - Vue 项目实战》： av48333477 https://www.bilibili.com/video/av47382482 《构建工具 Maven 视频教程全集（35P）》https://www.bilibili.com/video/av47701443 《版本控制 Git 视频教程全集（62P）》https://www.bilibili.com/video/av47702283 《操作系统 Linux 视频教程全集》https://www.bilibili.com/video/av48621769 《大数据开发第一季 - Hadoop》： av48621769https://www.bilibili.com/video/av48581792 《大数据开发第二季 - HBase》： av48581792https://www.bilibili.com/video/av48609427 《大数据开发第三季 - Hive》： av48609427https://www.bilibili.com/video/av50996367 《大数据开发第四季 - Flink》： av50996367https://www.bilibili.com/video/av48668079《大数据开发第五季 - Spark》： av48668079 https://www.bilibili.com/video/av48444262《架构之路第一季 - RabbitMQ》： av48444262https://www.bilibili.com/video/av47773990《架构之路第二季 - Kafka》： av47773990https://www.bilibili.com/video/av47773419《架构之路第三季 - Zookeeper》： av47773419 01、Java av4710378102、Spring av4717683203、Spring Mvc av4721856604、MyBatis av4722883005、Hibernate av4730428806、Spring Boot av4723013707、Spring Cloud08、Dubbo av4700914309、MySQL av4770290510、Redis av4742317411、MongoDB av4742535212、Elasticsearch av4827998913、Zookeeper av4777341914、Kafka av4777399015、Linux av4770228316、Docker av4771528217、Maven av4738248218、Git av4770144319、Jenkins av4771470620、IDEA av4771516121、Shiro av4771553622、React av4803369523、Vue av4833347724、电商项目实战 av4830845325、RBAC 权限系统 av4830571926、数据结构与算法 av4850555627、Oracle av4850247328、ActiveMQ av4856247429、TCP/IP av4856242630、HTTP av4856145531、Netty av4857020232、Gradle av4858111933、HBase av4858179234、Kubernetes av4858245635、Hive av4860942736、Hadoop av4862176937、Spark av48668079]]></content>
+      <tags>
+        <tag>java资料</tag>
       </tags>
   </entry>
   <entry>
