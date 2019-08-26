@@ -299,7 +299,7 @@
 
 <h1 id="5-当前工作目录"><a href="#5-当前工作目录" class="headerlink" title="5. 当前工作目录"></a>5. 当前工作目录</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pwd</span><br></pre></td></tr></table></figure>
 
-<h1 id="6-复制文件包括其子文件到自定目录"><a href="#6-复制文件包括其子文件到自定目录" class="headerlink" title="6. 复制文件包括其子文件到自定目录"></a>6. 复制文件包括其子文件到自定目录</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cp -r sourceFolder targetFolder</span><br></pre></td></tr></table></figure>
+<h1 id="6-复制文件包括其子文件到自定目录"><a href="#6-复制文件包括其子文件到自定目录" class="headerlink" title="6. 复制文件包括其子文件到自定目录"></a>6. 复制文件包括其子文件到自定目录</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">\cp -rf /usr/local/tomcat/tomcat7/tomcat_7.96/apache-tomcat-7.0.96-src/*  /usr/local/tomcat/tomcat7/tomcat_7.96/</span><br><span class="line">复制指定目录下面所有文件到指定文件夹 不进行提示</span><br><span class="line">\ 要保留</span><br></pre></td></tr></table></figure>
 
 <h1 id="7-创建目录"><a href="#7-创建目录" class="headerlink" title="7. 创建目录"></a>7. 创建目录</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mkdir newfolder</span><br></pre></td></tr></table></figure>
 
@@ -314,11 +314,12 @@
 
 <h1 id="12-修改文件权限"><a href="#12-修改文件权限" class="headerlink" title="12. 修改文件权限"></a>12. 修改文件权限</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">chmod 777 file.java</span><br><span class="line">//file.java的权限-rwxrwxrwx，r表示读、w表示写、x表示可执行</span><br></pre></td></tr></table></figure>
 
-<h1 id="13-压缩文件"><a href="#13-压缩文件" class="headerlink" title="13. 压缩文件"></a>13. 压缩文件</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tar -czf test.tar.gz /test1 /test2</span><br></pre></td></tr></table></figure>
+<h1 id="13-压缩文件"><a href="#13-压缩文件" class="headerlink" title="13. 压缩文件"></a>13. 压缩文件</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">cd 需要压缩文件的目录</span><br><span class="line">tar -zcvf tomcat7.961.tar.gz * --exclude=tomcat*gz</span><br><span class="line">压缩文件名为  tomcat7.961.tar.gz </span><br><span class="line">* 当前文件夹所有</span><br><span class="line">--exclude=tomcat*gz  排除掉部分文件不进行压缩。tomcat开头gz结尾</span><br></pre></td></tr></table></figure>
 
 <h1 id="14-列出压缩文件列表"><a href="#14-列出压缩文件列表" class="headerlink" title="14. 列出压缩文件列表"></a>14. 列出压缩文件列表</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tar -tzf test.tar.gz</span><br></pre></td></tr></table></figure>
 
-<h1 id="15-解压文件"><a href="#15-解压文件" class="headerlink" title="15. 解压文件"></a>15. 解压文件</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tar -xvzf test.tar.gz</span><br></pre></td></tr></table></figure>
+<h1 id="15-解压文件"><a href="#15-解压文件" class="headerlink" title="15. 解压文件"></a>15. 解压文件</h1><p><a href="https://www.runoob.com/linux/linux-comm-tar.html" target="_blank" rel="noopener">https://www.runoob.com/linux/linux-comm-tar.html</a>   参考</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">tar -xvzf test.tar.gz -C /home/admin/path/</span><br><span class="line">解压显示执行过程 </span><br><span class="line">-C 指定目录</span><br></pre></td></tr></table></figure>
 
 <h1 id="16-查看文件头10行"><a href="#16-查看文件头10行" class="headerlink" title="16. 查看文件头10行"></a>16. 查看文件头10行</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">head -n 10 example.txt</span><br></pre></td></tr></table></figure>
 
