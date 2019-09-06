@@ -57,18 +57,19 @@
   };
 </script>
 
-  <meta name="description" content="luke Blog">
+  <meta name="description" content="12345678910111213import sysclass Logger(object):    def __init__(self, filename=&apos;console.log&apos;, stream=sys.stdout):        self.terminal = stream        self.log = open(filename, &apos;a&apos;,encoding=&apos;utf8&apos;)">
+<meta name="keywords" content="python,日志">
 <meta property="og:type" content="article">
-<meta property="og:title" content="快乐B站学编程">
-<meta property="og:url" content="https://myzou.github.io/myzou/2019/09/05/快乐B站学编程/index.html">
+<meta property="og:title" content="python3控制台内容输出到文件">
+<meta property="og:url" content="https://myzou.github.io/myzou/2019/09/06/python3控制台内容输出到文件/index.html">
 <meta property="og:site_name" content="luke Blog">
-<meta property="og:description" content="luke Blog">
+<meta property="og:description" content="12345678910111213import sysclass Logger(object):    def __init__(self, filename=&apos;console.log&apos;, stream=sys.stdout):        self.terminal = stream        self.log = open(filename, &apos;a&apos;,encoding=&apos;utf8&apos;)">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-09-05T05:23:57.487Z">
+<meta property="og:updated_time" content="2019-09-06T03:18:54.956Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="快乐B站学编程">
-<meta name="twitter:description" content="luke Blog">
-  <link rel="canonical" href="https://myzou.github.io/myzou/2019/09/05/快乐B站学编程/">
+<meta name="twitter:title" content="python3控制台内容输出到文件">
+<meta name="twitter:description" content="12345678910111213import sysclass Logger(object):    def __init__(self, filename=&apos;console.log&apos;, stream=sys.stdout):        self.terminal = stream        self.log = open(filename, &apos;a&apos;,encoding=&apos;utf8&apos;)">
+  <link rel="canonical" href="https://myzou.github.io/myzou/2019/09/06/python3控制台内容输出到文件/">
 
 
 <script id="page.configurations">
@@ -77,7 +78,7 @@
   };
 </script>
 
-  <title>快乐B站学编程 | luke Blog</title>
+  <title>python3控制台内容输出到文件 | luke Blog</title>
   
 
 
@@ -221,7 +222,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://myzou.github.io/myzou/myzou/2019/09/05/快乐B站学编程/">
+    <link itemprop="mainEntityOfPage" href="https://myzou.github.io/myzou/myzou/2019/09/06/python3控制台内容输出到文件/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Luke">
@@ -235,7 +236,7 @@
       <header class="post-header">
 
         
-          <h1 class="post-title" itemprop="name headline">快乐B站学编程
+          <h1 class="post-title" itemprop="name headline">python3控制台内容输出到文件
 
               
             
@@ -255,7 +256,7 @@
                 
               
 
-              <time title="创建时间：2019-09-05 13:23:57" itemprop="dateCreated datePublished" datetime="2019-09-05T13:23:57+08:00">2019-09-05</time>
+              <time title="创建时间：2019-09-06 11:18:54" itemprop="dateCreated datePublished" datetime="2019-09-06T11:18:54+08:00">2019-09-06</time>
             </span>
           
 
@@ -270,7 +271,9 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        
+        <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> sys</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Logger</span><span class="params">(object)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self, filename=<span class="string">'console.log'</span>, stream=sys.stdout)</span>:</span></span><br><span class="line">        self.terminal = stream</span><br><span class="line">        self.log = open(filename, <span class="string">'a'</span>,encoding=<span class="string">'utf8'</span>)</span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">write</span><span class="params">(self, message)</span>:</span></span><br><span class="line">        self.terminal.write(message)</span><br><span class="line">        self.log.write(message)</span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">flush</span><span class="params">(self)</span>:</span></span><br><span class="line">        <span class="keyword">pass</span></span><br><span class="line">sys.stdout = Logger(<span class="string">'console.log'</span>, sys.stdout)</span><br><span class="line">sys.stderr = Logger(<span class="string">'console.log'</span>, sys.stderr)</span><br></pre></td></tr></table></figure>
+
+
     </div>
       
 
@@ -280,10 +283,18 @@
     
 
     <footer class="post-footer">
+          
+        
+        <div class="post-tags">
+            <a href="/myzou/tags/python/" rel="tag"># python</a>
+          
+            <a href="/myzou/tags/日志/" rel="tag"># 日志</a>
+          
+        </div>
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
-              <a href="/myzou/2019/08/26/关于使用IDEA连接mysql后不显示表的解决方案/" rel="next" title="关于使用IDEA连接mysql后不显示表的解决方案">
-                <i class="fa fa-chevron-left"></i> 关于使用IDEA连接mysql后不显示表的解决方案
+              <a href="/myzou/2019/09/05/快乐B站学编程/" rel="next" title="快乐B站学编程">
+                <i class="fa fa-chevron-left"></i> 快乐B站学编程
               </a>
             
           </div>
@@ -291,10 +302,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-              <a href="/myzou/2019/09/06/python3控制台内容输出到文件/" rel="prev" title="python3控制台内容输出到文件">
-                python3控制台内容输出到文件 <i class="fa fa-chevron-right"></i>
-              </a>
-            
           </div>
         </div>
     </footer>

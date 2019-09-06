@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[python3控制台内容输出到文件]]></title>
+    <url>%2Fmyzou%2F2019%2F09%2F06%2Fpython3%E6%8E%A7%E5%88%B6%E5%8F%B0%E5%86%85%E5%AE%B9%E8%BE%93%E5%87%BA%E5%88%B0%E6%96%87%E4%BB%B6%2F</url>
+    <content type="text"><![CDATA[12345678910111213import sysclass Logger(object): def __init__(self, filename='console.log', stream=sys.stdout): self.terminal = stream self.log = open(filename, 'a',encoding='utf8') def write(self, message): self.terminal.write(message) self.log.write(message) def flush(self): passsys.stdout = Logger('console.log', sys.stdout)sys.stderr = Logger('console.log', sys.stderr)]]></content>
+      <tags>
+        <tag>python</tag>
+        <tag>日志</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[快乐B站学编程]]></title>
     <url>%2Fmyzou%2F2019%2F09%2F05%2F%E5%BF%AB%E4%B9%90B%E7%AB%99%E5%AD%A6%E7%BC%96%E7%A8%8B%2F</url>
     <content type="text"></content>
@@ -144,20 +153,20 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[快乐B站]]></title>
-    <url>%2Fmyzou%2F2019%2F08%2F02%2F%E5%BF%AB%E4%B9%90B%E7%AB%99%2F</url>
-    <content type="text"><![CDATA[掉头发系列Javahttps://www.bilibili.com/read/cv3174527 前端https://www.bilibili.com/read/cv3227638]]></content>
-      <tags>
-        <tag>快乐，脱发，java，前端</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[脚本启动tomcat]]></title>
     <url>%2Fmyzou%2F2019%2F08%2F02%2F%E8%84%9A%E6%9C%AC%E5%90%AF%E5%8A%A8tomcat%2F</url>
     <content type="text"><![CDATA[1234#!/bin/bashsh /usr/local/tomcat/ov_8081/bin/shutdown.shsh /usr/local/tomcat/ov_8081/bin/startup.shtail -f /usr/local/tomcat/ov_8081/logs/catalina.out]]></content>
       <tags>
         <tag>脚本</tag>
         <tag>tomcat</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[快乐B站]]></title>
+    <url>%2Fmyzou%2F2019%2F08%2F02%2F%E5%BF%AB%E4%B9%90B%E7%AB%99%2F</url>
+    <content type="text"><![CDATA[掉头发系列Javahttps://www.bilibili.com/read/cv3174527 前端https://www.bilibili.com/read/cv3227638]]></content>
+      <tags>
+        <tag>快乐，脱发，java，前端</tag>
       </tags>
   </entry>
   <entry>
