@@ -10,11 +10,6 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[快乐B站学编程]]></title>
-    <url>%2Fmyzou%2F2019%2F09%2F05%2F%E5%BF%AB%E4%B9%90B%E7%AB%99%E5%AD%A6%E7%BC%96%E7%A8%8B%2F</url>
-    <content type="text"></content>
-  </entry>
-  <entry>
     <title><![CDATA[关于使用IDEA连接mysql后不显示表的解决方案]]></title>
     <url>%2Fmyzou%2F2019%2F08%2F26%2F%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8IDEA%E8%BF%9E%E6%8E%A5mysql%E5%90%8E%E4%B8%8D%E6%98%BE%E7%A4%BA%E8%A1%A8%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%2F</url>
     <content type="text"><![CDATA[转载链接：https://blog.csdn.net/u012834773/article/details/89893678 总结简单来说，就是Database&gt;点击设置，然后设置》Schemas》选中显示的表保存即可 详细 在更换了最新版的2019.1版本的IDEA后，连接mysql，在配置页面也指定连接mysql的数据库了，但是，连接成功后，这是什么鬼？ 我百度了一下并没有找到解决方案，也困扰了我一段时间。但是我无意间尝试成功，这个问题完美解决，方法分享给大家 点击Data Source的图标进去 点击Schemas选项，勾选你需要显示在idea的库，然后Apply OK，解决。]]></content>
@@ -91,18 +86,13 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[java学习路线]]></title>
-    <url>%2Fmyzou%2F2019%2F08%2F13%2Fjava%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF%2F</url>
+    <title><![CDATA[搞黄色]]></title>
+    <url>%2Fmyzou%2F2019%2F08%2F13%2F%E6%90%9E%E9%BB%84%E8%89%B2%2F</url>
     <content type="text"><![CDATA[诗和远方http://www.315310.top/c/ 群主发的 https://www.pornhub.com p站 掉头发]]></content>
       <tags>
         <tag>java学习</tag>
         <tag>架构</tag>
       </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[Tomcat进程意外退出的问题分析]]></title>
-    <url>%2Fmyzou%2F2019%2F08%2F12%2FTomcat%E8%BF%9B%E7%A8%8B%E6%84%8F%E5%A4%96%E9%80%80%E5%87%BA%E7%9A%84%E9%97%AE%E9%A2%98%E5%88%86%E6%9E%90%2F</url>
-    <content type="text"></content>
   </entry>
   <entry>
     <title><![CDATA[图片]]></title>
@@ -155,10 +145,11 @@
   <entry>
     <title><![CDATA[脚本启动tomcat]]></title>
     <url>%2Fmyzou%2F2019%2F08%2F02%2F%E8%84%9A%E6%9C%AC%E5%90%AF%E5%8A%A8tomcat%2F</url>
-    <content type="text"><![CDATA[1234#!/bin/bashsh /usr/local/tomcat/ov_8081/bin/shutdown.shsh /usr/local/tomcat/ov_8081/bin/startup.shtail -f /usr/local/tomcat/ov_8081/logs/catalina.out]]></content>
+    <content type="text"><![CDATA[123456#!/bin/bash##set -m 是为了不然在输出日志的关闭进程导致 启动触发shutdown 导致关闭tomcatset -msh /usr/local/tomcat/ov_8081/bin/shutdown.shsh /usr/local/tomcat/ov_8081/bin/startup.shtail -f /usr/local/tomcat/ov_8081/logs/catalina.out Tomcat进程意外退出的问题分析 https://blog.csdn.net/zhouyannian1988/article/details/53508689]]></content>
       <tags>
         <tag>脚本</tag>
         <tag>tomcat</tag>
+        <tag>tomcat异常</tag>
       </tags>
   </entry>
   <entry>
