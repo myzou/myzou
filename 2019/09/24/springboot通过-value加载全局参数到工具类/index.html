@@ -57,19 +57,19 @@
   };
 </script>
 
-  <meta name="description" content="###1、取得指定日期是星期几  取得指定日期是星期几可以采用下面两种方式取得日期是星期几： ##a、使用Calendar类 根据日期取得星期几 12345678910public static String getWeek(Date date)&amp;#123;  String[] weeks = &amp;#123;&quot;星期日&quot;,&quot;星期一&quot;,&quot;星期二&quot;,&quot;星期三&quot;,&quot;星期四&quot;,&quot;星期五&quot;,&quot;星期六&quot;&amp;#125">
-<meta name="keywords" content="java,工具类,获取日期">
+  <meta name="description" content="这个是通过@value加载配置文件中的参数写到工具类知识点： 1.@Configuration 和 @component 的使用和区别 2.@value 的作用 LoadProperties.java123456789101112131415161718192021222324import org.springframework.beans.factory.annotation.Value;im">
+<meta name="keywords" content="工具类,springboot,@value">
 <meta property="og:type" content="article">
-<meta property="og:title" content="java中如何获取日期时间中的星期几？">
-<meta property="og:url" content="https://myzou.github.io/myzou/2019/08/06/java中如何获取日期时间中的星期几？/index.html">
+<meta property="og:title" content="springboot通过@value加载全局参数到工具类">
+<meta property="og:url" content="https://myzou.github.io/myzou/2019/09/24/springboot通过-value加载全局参数到工具类/index.html">
 <meta property="og:site_name" content="luke Blog">
-<meta property="og:description" content="###1、取得指定日期是星期几  取得指定日期是星期几可以采用下面两种方式取得日期是星期几： ##a、使用Calendar类 根据日期取得星期几 12345678910public static String getWeek(Date date)&amp;#123;  String[] weeks = &amp;#123;&quot;星期日&quot;,&quot;星期一&quot;,&quot;星期二&quot;,&quot;星期三&quot;,&quot;星期四&quot;,&quot;星期五&quot;,&quot;星期六&quot;&amp;#125">
+<meta property="og:description" content="这个是通过@value加载配置文件中的参数写到工具类知识点： 1.@Configuration 和 @component 的使用和区别 2.@value 的作用 LoadProperties.java123456789101112131415161718192021222324import org.springframework.beans.factory.annotation.Value;im">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-08-07T06:43:41.772Z">
+<meta property="og:updated_time" content="2019-09-24T02:37:06.498Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="java中如何获取日期时间中的星期几？">
-<meta name="twitter:description" content="###1、取得指定日期是星期几  取得指定日期是星期几可以采用下面两种方式取得日期是星期几： ##a、使用Calendar类 根据日期取得星期几 12345678910public static String getWeek(Date date)&amp;#123;  String[] weeks = &amp;#123;&quot;星期日&quot;,&quot;星期一&quot;,&quot;星期二&quot;,&quot;星期三&quot;,&quot;星期四&quot;,&quot;星期五&quot;,&quot;星期六&quot;&amp;#125">
-  <link rel="canonical" href="https://myzou.github.io/myzou/2019/08/06/java中如何获取日期时间中的星期几？/">
+<meta name="twitter:title" content="springboot通过@value加载全局参数到工具类">
+<meta name="twitter:description" content="这个是通过@value加载配置文件中的参数写到工具类知识点： 1.@Configuration 和 @component 的使用和区别 2.@value 的作用 LoadProperties.java123456789101112131415161718192021222324import org.springframework.beans.factory.annotation.Value;im">
+  <link rel="canonical" href="https://myzou.github.io/myzou/2019/09/24/springboot通过-value加载全局参数到工具类/">
 
 
 <script id="page.configurations">
@@ -78,7 +78,7 @@
   };
 </script>
 
-  <title>java中如何获取日期时间中的星期几？ | luke Blog</title>
+  <title>springboot通过@value加载全局参数到工具类 | luke Blog</title>
   
 
 
@@ -222,7 +222,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://myzou.github.io/myzou/myzou/2019/08/06/java中如何获取日期时间中的星期几？/">
+    <link itemprop="mainEntityOfPage" href="https://myzou.github.io/myzou/myzou/2019/09/24/springboot通过-value加载全局参数到工具类/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Luke">
@@ -236,7 +236,7 @@
       <header class="post-header">
 
         
-          <h1 class="post-title" itemprop="name headline">java中如何获取日期时间中的星期几？
+          <h1 class="post-title" itemprop="name headline">springboot通过@value加载全局参数到工具类
 
               
             
@@ -256,22 +256,8 @@
                 
               
 
-              <time title="创建时间：2019-08-06 15:48:37" itemprop="dateCreated datePublished" datetime="2019-08-06T15:48:37+08:00">2019-08-06</time>
+              <time title="创建时间：2019-09-24 10:37:06" itemprop="dateCreated datePublished" datetime="2019-09-24T10:37:06+08:00">2019-09-24</time>
             </span>
-          
-            
-
-            
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2019-08-07 14:43:41" itemprop="dateModified" datetime="2019-08-07T14:43:41+08:00">2019-08-07</time>
-              </span>
-            
           
 
           <br/>
@@ -285,26 +271,17 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>###1、取得指定日期是星期几</p>
-<hr>
-<p>取得指定日期是星期几可以采用下面两种方式取得日期是星期几：</p>
-<p>##a、使用Calendar类</p>
-<p><strong>根据日期取得星期几</strong></p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> String <span class="title">getWeek</span><span class="params">(Date date)</span></span>&#123;</span><br><span class="line">  String[] weeks = &#123;<span class="string">"星期日"</span>,<span class="string">"星期一"</span>,<span class="string">"星期二"</span>,<span class="string">"星期三"</span>,<span class="string">"星期四"</span>,<span class="string">"星期五"</span>,<span class="string">"星期六"</span>&#125;;</span><br><span class="line">  Calendar cal = Calendar.getInstance();</span><br><span class="line">  cal.setTime(date);</span><br><span class="line">  <span class="keyword">int</span> week_index = cal.get(Calendar.DAY_OF_WEEK) - <span class="number">1</span>;</span><br><span class="line">  <span class="keyword">if</span>(week_index&lt;<span class="number">0</span>)&#123;</span><br><span class="line">  week_index = <span class="number">0</span>;</span><br><span class="line">  &#125; </span><br><span class="line">  <span class="keyword">return</span> weeks[week_index];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+        <p> 这个是通过@value加载配置文件中的参数写到工具类<br>知识点：</p>
+<p>1.@Configuration 和 @component 的使用和区别</p>
+<p>2.@value 的作用</p>
+<h4 id="LoadProperties-java"><a href="#LoadProperties-java" class="headerlink" title="LoadProperties.java"></a>LoadProperties.java</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> org.springframework.beans.factory.annotation.Value;</span><br><span class="line"><span class="keyword">import</span> org.springframework.context.annotation.Configuration;</span><br><span class="line"><span class="keyword">import</span> org.springframework.context.annotation.PropertySource;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@author</span></span></span><br><span class="line"><span class="comment"> * <span class="doctag">@create</span> 2019-09-20 18:52</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@project</span></span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="meta">@Configuration</span></span><br><span class="line"><span class="meta">@PropertySource</span>(value = <span class="string">"classpath:param.properties"</span>)</span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">LoadProperties</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> String PROTOCOL;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span>  String <span class="title">getPROTOCOL</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> PROTOCOL;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Value</span>(<span class="string">"$&#123;protocol&#125;"</span>)</span><br><span class="line">    <span class="function"><span class="keyword">public</span>  <span class="keyword">void</span> <span class="title">setPROTOCOL</span><span class="params">(String protocol)</span> </span>&#123;</span><br><span class="line">        PROTOCOL = protocol;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p>##b、使用SimpleDateFormat类</p>
-<p><strong>1.根据日期取得星期几</strong></p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> String <span class="title">getWeek</span><span class="params">(Date date)</span></span>&#123; </span><br><span class="line">SimpleDateFormat sdf = <span class="keyword">new</span> SimpleDateFormat(<span class="string">"EEEE"</span>);</span><br><span class="line">String week = sdf.format(date);</span><br><span class="line"><span class="keyword">return</span> week;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="src-main-resources-param-properties"><a href="#src-main-resources-param-properties" class="headerlink" title="\src\main\resources\param.properties"></a>\src\main\resources\param.properties</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">############ 这个文件是默认的参数 ###############</span><br><span class="line"></span><br><span class="line">#####   发送邮件配置 start ########</span><br><span class="line">#连接协议</span><br><span class="line">protocol=smtp</span><br><span class="line">#####   发送邮件配置 end ########</span><br></pre></td></tr></table></figure>
 
-<p>注：格式化字符串存在区分大小写<br>对于创建SimpleDateFormat传入的参数：EEEE代表星期，如“星期四”；MMMM代表中文月份，如“十一月”；MM代表月份，如“11”；<br>yyyy代表年份，如“2010”；dd代表天，如“25”        </p>
-<p><strong>2.取得日期是某年的第几周</strong><br>根据日期入得日期是某年的第几周。<br>//取得日期是某年的第几周</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span> <span class="title">getWeekOfYear</span><span class="params">(Date date)</span></span>&#123;</span><br><span class="line">  Calendar cal = Calendar.getInstance();</span><br><span class="line">  cal.setTime(date);</span><br><span class="line">  <span class="keyword">int</span> week_of_year = cal.get(Calendar.WEEK_OF_YEAR);</span><br><span class="line">  <span class="keyword">return</span> week_of_year;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="测试类-src-test-java-com-curd-CurdApplicationTests-java"><a href="#测试类-src-test-java-com-curd-CurdApplicationTests-java" class="headerlink" title="测试类 \src\test\java\com\curd\CurdApplicationTests.java"></a>测试类 \src\test\java\com\curd\CurdApplicationTests.java</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> com.curd.test.LoadProperties;</span><br><span class="line"><span class="keyword">import</span> org.junit.Test;</span><br><span class="line"><span class="keyword">import</span> org.junit.runner.RunWith;</span><br><span class="line"><span class="keyword">import</span> org.springframework.boot.test.context.SpringBootTest;</span><br><span class="line"><span class="keyword">import</span> org.springframework.test.context.junit4.SpringRunner;</span><br><span class="line"></span><br><span class="line"><span class="meta">@RunWith</span>(SpringRunner.class)</span><br><span class="line"><span class="meta">@SpringBootTest</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">CurdApplicationTests</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Test</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">contextLoads</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">"test:"</span>+ LoadProperties.PROTOCOL);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p><strong>3、得到某年的某个月有多少天</strong><br>已知年份和月份，取得该月有多少天。<br>//取得某个月有多少天</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span> <span class="title">getDaysOfMonth</span><span class="params">(<span class="keyword">int</span> year,<span class="keyword">int</span> month)</span></span>&#123;</span><br><span class="line">  Calendar cal = Calendar.getInstance();</span><br><span class="line">  cal.set(Calendar.YEAR, year);</span><br><span class="line">  cal.set(Calendar.MONTH, month-<span class="number">1</span>);</span><br><span class="line">  <span class="keyword">int</span> days_of_month = cal.getActualMaximum(Calendar.DAY_OF_MONTH);</span><br><span class="line">  <span class="keyword">return</span> days_of_month;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>b、使用SimpleDateFormat类<br><strong>4.已知两个日期，计算它们之间相差多少天。</strong><br>// 取得两个日期之间的相差多少天</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">long</span> <span class="title">getDaysBetween</span><span class="params">(Date date0, Date date1)</span> </span>&#123;</span><br><span class="line"><span class="keyword">long</span> daysBetween = (date0.getTime() - date1.getTime() + <span class="number">1000000</span>) / <span class="number">86400000</span>;</span><br><span class="line"><span class="comment">// 86400000=3600241000  用立即数，减少乘法计算的开销</span></span><br><span class="line"><span class="keyword">return</span> daysBetween;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>打印内容</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">test:smtp</span><br></pre></td></tr></table></figure>
 
 
     </div>
@@ -314,21 +291,7 @@
     <li class="popular-posts-item">
       
       
-      <div class="popular-posts-title"><a href="\myzou\2019\08\15\Java程序员常用的22个Linux命令\" rel="bookmark">Java程序员常用的22个Linux命令</a></div>
-      
-    </li>
-  
-    <li class="popular-posts-item">
-      
-      
-      <div class="popular-posts-title"><a href="\myzou\2019\08\21\面试必考的HashMap\" rel="bookmark">面试必考的HashMap</a></div>
-      
-    </li>
-  
-    <li class="popular-posts-item">
-      
-      
-      <div class="popular-posts-title"><a href="\myzou\2019\09\24\springboot通过-value加载全局参数到工具类\" rel="bookmark">springboot通过@value加载全局参数到工具类</a></div>
+      <div class="popular-posts-title"><a href="\myzou\2019\08\06\java中如何获取日期时间中的星期几？\" rel="bookmark">java中如何获取日期时间中的星期几？</a></div>
       
     </li>
   
@@ -343,17 +306,17 @@
           
         
         <div class="post-tags">
-            <a href="/myzou/tags/java/" rel="tag"># java</a>
-          
             <a href="/myzou/tags/工具类/" rel="tag"># 工具类</a>
           
-            <a href="/myzou/tags/获取日期/" rel="tag"># 获取日期</a>
+            <a href="/myzou/tags/springboot/" rel="tag"># springboot</a>
+          
+            <a href="/myzou/tags/value/" rel="tag"># @value</a>
           
         </div>
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
-              <a href="/myzou/2019/08/06/加速国内Github访问/" rel="next" title="加速国内Github访问">
-                <i class="fa fa-chevron-left"></i> 加速国内Github访问
+              <a href="/myzou/2019/09/06/python3控制台内容输出到文件/" rel="next" title="python3控制台内容输出到文件">
+                <i class="fa fa-chevron-left"></i> python3控制台内容输出到文件
               </a>
             
           </div>
@@ -361,10 +324,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-              <a href="/myzou/2019/08/07/idea全局护眼色绿豆沙/" rel="prev" title="idea全局护眼色绿豆沙">
-                idea全局护眼色绿豆沙 <i class="fa fa-chevron-right"></i>
-              </a>
-            
           </div>
         </div>
     </footer>
@@ -394,8 +353,17 @@
 
   <aside id="sidebar" class="sidebar">
     <div class="sidebar-inner">
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
 
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -520,6 +488,23 @@
 
         </div>
       </div>
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#LoadProperties-java"><span class="nav-number">1.</span> <span class="nav-text">LoadProperties.java</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#src-main-resources-param-properties"><span class="nav-number">2.</span> <span class="nav-text">\src\main\resources\param.properties</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#测试类-src-test-java-com-curd-CurdApplicationTests-java"><span class="nav-number">3.</span> <span class="nav-text">测试类 \src\test\java\com\curd\CurdApplicationTests.java</span></a></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
+      
 
     </div>
   </aside>

@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[springboot通过@value加载全局参数到工具类]]></title>
+    <url>%2Fmyzou%2F2019%2F09%2F24%2Fspringboot%E9%80%9A%E8%BF%87-value%E5%8A%A0%E8%BD%BD%E5%85%A8%E5%B1%80%E5%8F%82%E6%95%B0%E5%88%B0%E5%B7%A5%E5%85%B7%E7%B1%BB%2F</url>
+    <content type="text"><![CDATA[这个是通过@value加载配置文件中的参数写到工具类知识点： 1.@Configuration 和 @component 的使用和区别 2.@value 的作用 LoadProperties.java123456789101112131415161718192021222324import org.springframework.beans.factory.annotation.Value;import org.springframework.context.annotation.Configuration;import org.springframework.context.annotation.PropertySource;/** * @author * @create 2019-09-20 18:52 * @project */@Configuration@PropertySource(value = "classpath:param.properties")public class LoadProperties &#123; public static String PROTOCOL; public String getPROTOCOL() &#123; return PROTOCOL; &#125; @Value("$&#123;protocol&#125;") public void setPROTOCOL(String protocol) &#123; PROTOCOL = protocol; &#125;&#125; \src\main\resources\param.properties123456############ 这个文件是默认的参数 #################### 发送邮件配置 start #########连接协议protocol=smtp##### 发送邮件配置 end ######## 测试类 \src\test\java\com\curd\CurdApplicationTests.java123456789101112131415import com.curd.test.LoadProperties;import org.junit.Test;import org.junit.runner.RunWith;import org.springframework.boot.test.context.SpringBootTest;import org.springframework.test.context.junit4.SpringRunner;@RunWith(SpringRunner.class)@SpringBootTestpublic class CurdApplicationTests &#123; @Test public void contextLoads() &#123; System.out.println("test:"+ LoadProperties.PROTOCOL); &#125;&#125; 打印内容 1test:smtp]]></content>
+      <tags>
+        <tag>工具类</tag>
+        <tag>springboot</tag>
+        <tag>@value</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[python3控制台内容输出到文件]]></title>
     <url>%2Fmyzou%2F2019%2F09%2F06%2Fpython3%E6%8E%A7%E5%88%B6%E5%8F%B0%E5%86%85%E5%AE%B9%E8%BE%93%E5%87%BA%E5%88%B0%E6%96%87%E4%BB%B6%2F</url>
     <content type="text"><![CDATA[12345678910111213import sysclass Logger(object): def __init__(self, filename='console.log', stream=sys.stdout): self.terminal = stream self.log = open(filename, 'a',encoding='utf8') def write(self, message): self.terminal.write(message) self.log.write(message) def flush(self): passsys.stdout = Logger('console.log', sys.stdout)sys.stderr = Logger('console.log', sys.stderr)]]></content>
@@ -143,14 +153,6 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[快乐B站]]></title>
-    <url>%2Fmyzou%2F2019%2F08%2F02%2F%E5%BF%AB%E4%B9%90B%E7%AB%99%2F</url>
-    <content type="text"><![CDATA[掉头发系列Javahttps://www.bilibili.com/read/cv3174527 前端https://www.bilibili.com/read/cv3227638]]></content>
-      <tags>
-        <tag>快乐，脱发，java，前端</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[脚本启动tomcat]]></title>
     <url>%2Fmyzou%2F2019%2F08%2F02%2F%E8%84%9A%E6%9C%AC%E5%90%AF%E5%8A%A8tomcat%2F</url>
     <content type="text"><![CDATA[123456#!/bin/bash##set -m 是为了不然在输出日志的关闭进程导致 启动触发shutdown 导致关闭tomcatset -msh /usr/local/tomcat/ov_8081/bin/shutdown.shsh /usr/local/tomcat/ov_8081/bin/startup.shtail -f /usr/local/tomcat/ov_8081/logs/catalina.out Tomcat进程意外退出的问题分析 https://blog.csdn.net/zhouyannian1988/article/details/53508689]]></content>
@@ -167,6 +169,14 @@
       <tags>
         <tag>脚本</tag>
         <tag>shell</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[快乐B站]]></title>
+    <url>%2Fmyzou%2F2019%2F08%2F02%2F%E5%BF%AB%E4%B9%90B%E7%AB%99%2F</url>
+    <content type="text"><![CDATA[掉头发系列Javahttps://www.bilibili.com/read/cv3174527 前端https://www.bilibili.com/read/cv3227638]]></content>
+      <tags>
+        <tag>快乐，脱发，java，前端</tag>
       </tags>
   </entry>
   <entry>
