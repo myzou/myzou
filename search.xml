@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[python读取配置文conf配置文件坑]]></title>
+    <url>%2Fmyzou%2F2019%2F10%2F08%2Fpython%E8%AF%BB%E5%8F%96%E9%85%8D%E7%BD%AE%E6%96%87conf%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E5%9D%91%2F</url>
+    <content type="text"><![CDATA[getConfig.py123456789101112def getConfig(configName=&apos;config.conf&apos;): config = configparser.ConfigParser() config.read(configName,encoding=&apos;UTF-8-sig&apos;) lists_header = config.sections() # 配置组名, [&apos;luzhuo.me&apos;, &apos;mysql&apos;] # 不含&apos;DEFAULT&apos; loginOP = str(config.get(&apos;login&apos;, &apos;loginOP&apos;)).replace(&apos;\n&apos;,&apos;&apos;).replace(&apos; &apos;, &apos;&apos;) loginOPPassword = str(config.get(&apos;login&apos;, &apos;loginOPPassword&apos;)).replace(&apos;\n&apos;,&apos;&apos;).replace(&apos; &apos;, &apos;&apos;) before_csv = str(config.get(&apos;csv_config&apos;, &apos;before_csv&apos;)) after_csv = str(config.get(&apos;csv_config&apos;, &apos;after_csv&apos;)) ggwApiUrl = str(config.get(&apos;default_config&apos;, &apos;ggwApiUrl&apos;)) sign = str(config.get(&apos;default_config&apos;, &apos;sign&apos;)) command1 = str(config.get(&apos;default_config&apos;, &apos;command1&apos;)) return loginOP,loginOPPassword,ggwApiUrl,sign,command1,before_csv,after_csv config.conf123456789101112131415#登录设备的op信息,自行修改为登录的账号密码[login]loginOP=op1768loginOPPassword=op1768loginOPPassword#提供扫描csv文件 123456 是对应的case号[csv_config]before_csv=123456_before.csvafter_csv=123456_after.csv#默认配置请勿修改[default_config]ggwApiUrl=http://10.180.5.135:48888sign=123456command1=show bgp summary |match &lt;CE_WAN_IP&gt; 坑读取编码格式需要 UTF-8-sig 否则会出现编码格式出错 \ufeff ​ config.read(configName,encoding=’UTF-8-sig’)]]></content>
+      <tags>
+        <tag>python</tag>
+        <tag>conf</tag>
+        <tag>配置</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[springboot通过@value加载全局参数到工具类]]></title>
     <url>%2Fmyzou%2F2019%2F09%2F24%2Fspringboot%E9%80%9A%E8%BF%87-value%E5%8A%A0%E8%BD%BD%E5%85%A8%E5%B1%80%E5%8F%82%E6%95%B0%E5%88%B0%E5%B7%A5%E5%85%B7%E7%B1%BB%2F</url>
     <content type="text"><![CDATA[这个是通过@value加载配置文件中的参数写到工具类知识点： 1.@Configuration 和 @component 的使用和区别 2.@value 的作用 LoadProperties.java123456789101112131415161718192021222324import org.springframework.beans.factory.annotation.Value;import org.springframework.context.annotation.Configuration;import org.springframework.context.annotation.PropertySource;/** * @author * @create 2019-09-20 18:52 * @project */@Configuration@PropertySource(value = "classpath:param.properties")public class LoadProperties &#123; public static String PROTOCOL; public String getPROTOCOL() &#123; return PROTOCOL; &#125; @Value("$&#123;protocol&#125;") public void setPROTOCOL(String protocol) &#123; PROTOCOL = protocol; &#125;&#125; \src\main\resources\param.properties123456############ 这个文件是默认的参数 #################### 发送邮件配置 start #########连接协议protocol=smtp##### 发送邮件配置 end ######## 测试类 \src\test\java\com\curd\CurdApplicationTests.java123456789101112131415import com.curd.test.LoadProperties;import org.junit.Test;import org.junit.runner.RunWith;import org.springframework.boot.test.context.SpringBootTest;import org.springframework.test.context.junit4.SpringRunner;@RunWith(SpringRunner.class)@SpringBootTestpublic class CurdApplicationTests &#123; @Test public void contextLoads() &#123; System.out.println("test:"+ LoadProperties.PROTOCOL); &#125;&#125; 打印内容 1test:smtp]]></content>
@@ -151,14 +161,6 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[快乐B站]]></title>
-    <url>%2Fmyzou%2F2019%2F08%2F02%2F%E5%BF%AB%E4%B9%90B%E7%AB%99%2F</url>
-    <content type="text"><![CDATA[掉头发系列Javahttps://www.bilibili.com/read/cv3174527 前端https://www.bilibili.com/read/cv3227638]]></content>
-      <tags>
-        <tag>快乐，脱发，java，前端</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[脚本启动tomcat]]></title>
     <url>%2Fmyzou%2F2019%2F08%2F02%2F%E8%84%9A%E6%9C%AC%E5%90%AF%E5%8A%A8tomcat%2F</url>
     <content type="text"><![CDATA[123456#!/bin/bash##set -m 是为了不然在输出日志的关闭进程导致 启动触发shutdown 导致关闭tomcatset -msh /usr/local/tomcat/ov_8081/bin/shutdown.shsh /usr/local/tomcat/ov_8081/bin/startup.shtail -f /usr/local/tomcat/ov_8081/logs/catalina.out Tomcat进程意外退出的问题分析 https://blog.csdn.net/zhouyannian1988/article/details/53508689]]></content>
@@ -175,6 +177,14 @@
       <tags>
         <tag>脚本</tag>
         <tag>shell</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[快乐B站]]></title>
+    <url>%2Fmyzou%2F2019%2F08%2F02%2F%E5%BF%AB%E4%B9%90B%E7%AB%99%2F</url>
+    <content type="text"><![CDATA[掉头发系列Javahttps://www.bilibili.com/read/cv3174527 前端https://www.bilibili.com/read/cv3227638]]></content>
+      <tags>
+        <tag>快乐，脱发，java，前端</tag>
       </tags>
   </entry>
   <entry>
