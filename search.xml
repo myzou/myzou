@@ -85,7 +85,7 @@
   <entry>
     <title><![CDATA[科学上网]]></title>
     <url>%2Fmyzou%2F2019%2F08%2F14%2F%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91%2F</url>
-    <content type="text"><![CDATA[汝霖ssrssr://MTU1LjEzOC4yMjYuMTkzOjIzNTU6b3JpZ2luOmFlcy0yNTYtY2ZiOnBsYWluOmFtRnpiMjQ v2rayN 订阅极游 https://sub.jiyou.cloud/modules/servers/V2raySocks/osubscribe.php?sid=37886&amp;token=RoCkXhMEreJE shadowsky https://www.shadowsky.world/user/node 免翻墙地址 账号： maibaobao1995@163.com https://www.shadowsky.world/feed?token=d8913df37b24c97f28f840114d05bd110dbb2e44&amp;uid=10239 ssr 201900919ssr://MTAzLjk1LjIwNy4xODg6MTM2NTc6YXV0aF9hZXMxMjhfbWQ1OmFlcy0yNTYtY2ZiOnRsczEuMl90aWNrZXRfYXV0aDpNVEl6TkRVMi8_b2Jmc3BhcmFtPVkyeHZkV1JtY205dWRDNXVaWFEmcmVtYXJrcz1kWE14TUMxUlF3Jmdyb3VwPWMyaGhaRzkzYzJ0NQ 备用蓝灯https://ppt.cc/fJ6r8x 这个地址测试能够下载 PC https://github.com/lanternpro/about/blob/master/download.md github 下载 安卓 软件下载v2rayN https://1.2345345.xyz/ads.html https://github.com/2dust/v2rayNG/releases 安卓下载https://github.com/2dust/v2rayN/releases window下载]]></content>
+    <content type="text"><![CDATA[汝霖ssrv2rayN 订阅shadowsky https://www.shadowsky.world/user/node 免翻墙地址 账号： maibaobao1995@163.com 订阅 https://www.shadowsky.world/feed?token=d8913df37b24c97f28f840114d05bd110dbb2e44&amp;uid=10239&amp;type=v2rayn&amp;flag=1 ssr 201900919备用蓝灯https://ppt.cc/fJ6r8x 这个地址测试能够下载 PC https://github.com/lanternpro/about/blob/master/download.md github 下载 安卓 软件下载v2rayN https://1.2345345.xyz/ads.html https://github.com/2dust/v2rayNG/releases 安卓下载https://github.com/2dust/v2rayN/releases window下载]]></content>
       <tags>
         <tag>翻墙</tag>
         <tag>科学上网</tag>
@@ -161,13 +161,11 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[脚本启动tomcat]]></title>
-    <url>%2Fmyzou%2F2019%2F08%2F02%2F%E8%84%9A%E6%9C%AC%E5%90%AF%E5%8A%A8tomcat%2F</url>
-    <content type="text"><![CDATA[123456#!/bin/bash##set -m 是为了不然在输出日志的关闭进程导致 启动触发shutdown 导致关闭tomcatset -msh /usr/local/tomcat/ov_8081/bin/shutdown.shsh /usr/local/tomcat/ov_8081/bin/startup.shtail -f /usr/local/tomcat/ov_8081/logs/catalina.out Tomcat进程意外退出的问题分析 https://blog.csdn.net/zhouyannian1988/article/details/53508689]]></content>
+    <title><![CDATA[快乐B站]]></title>
+    <url>%2Fmyzou%2F2019%2F08%2F02%2F%E5%BF%AB%E4%B9%90B%E7%AB%99%2F</url>
+    <content type="text"><![CDATA[掉头发系列Javahttps://www.bilibili.com/read/cv3174527 前端https://www.bilibili.com/read/cv3227638]]></content>
       <tags>
-        <tag>脚本</tag>
-        <tag>tomcat</tag>
-        <tag>tomcat异常</tag>
+        <tag>快乐，脱发，java，前端</tag>
       </tags>
   </entry>
   <entry>
@@ -180,11 +178,13 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[快乐B站]]></title>
-    <url>%2Fmyzou%2F2019%2F08%2F02%2F%E5%BF%AB%E4%B9%90B%E7%AB%99%2F</url>
-    <content type="text"><![CDATA[掉头发系列Javahttps://www.bilibili.com/read/cv3174527 前端https://www.bilibili.com/read/cv3227638]]></content>
+    <title><![CDATA[脚本启动tomcat]]></title>
+    <url>%2Fmyzou%2F2019%2F08%2F02%2F%E8%84%9A%E6%9C%AC%E5%90%AF%E5%8A%A8tomcat%2F</url>
+    <content type="text"><![CDATA[123456#!/bin/bash##set -m 是为了不然在输出日志的关闭进程导致 启动触发shutdown 导致关闭tomcatset -msh /usr/local/tomcat/ov_8081/bin/shutdown.shsh /usr/local/tomcat/ov_8081/bin/startup.shtail -f /usr/local/tomcat/ov_8081/logs/catalina.out Tomcat进程意外退出的问题分析 https://blog.csdn.net/zhouyannian1988/article/details/53508689]]></content>
       <tags>
-        <tag>快乐，脱发，java，前端</tag>
+        <tag>脚本</tag>
+        <tag>tomcat</tag>
+        <tag>tomcat异常</tag>
       </tags>
   </entry>
   <entry>
